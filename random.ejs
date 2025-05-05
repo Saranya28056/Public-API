@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="content">
+    <img src="<%=img%>" alt="image" width="200" height="200" class="img">&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="main">
+      <h1><%=name%></h1>
+      <h3><%=area%></h3>
+    </div>
+    <div class="process">
+        <h2 style="font-size: 30px;">Ingredients</h2>
+        <div style="display: flex;gap:5rem">
+             <div class="first">
+                  <%first.forEach(item=>{%>
+                     <ul>
+                      <li><%=item%></li>
+                     </ul>
+                  <%});%>
+             </div>
+          <div class="second">
+              <%second.forEach(item=>{%>
+              <ul>
+                <li><%=item%></li>
+              </ul>
+                 <%});%>
+        </div>
+    </div>
+        <h2 style="font-size: 30px;">Process</h2>
+    <p><%=process%></p>
+   </div>
+</div>
+</body>
+</html>
